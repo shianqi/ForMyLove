@@ -18,7 +18,7 @@
             android:src="@mipmap/zyq" android:id="@+id/imageView2"/>
     <TextView
             android:id="@+id/textView"
-            android:layout_marginTop="30dip"
+            android:layout_marginTop="50dip"
             android:text="我们在一起已经："
             android:textSize="18dip"
             android:layout_centerHorizontal="true"
@@ -38,48 +38,48 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
-                android:textSize="30dp" />
+                android:textSize="@dimen/time_text_size" />
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="d"
-                android:textSize="30dp" />
+                android:textSize="@dimen/time_prompt_size" />
         <TextView
                 android:id="@+id/hour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="00"
-                android:textSize="30dp" />
+                android:textSize="@dimen/time_text_size" />
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="h"
-                android:textSize="30dp" />
+                android:textSize="@dimen/time_prompt_size" />
         <TextView
                 android:id="@+id/mint"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="00"
-                android:textSize="30dp" />
+                android:textSize="@dimen/time_text_size" />
 
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="min"
-                android:textSize="30dp" />
+                android:textSize="@dimen/time_prompt_size" />
 
         <TextView
                 android:id="@+id/sec"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="00"
-                android:textSize="30dp" />
+                android:textSize="@dimen/time_text_size" />
 
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="s"
-                android:textSize="30dp" />
+                android:textSize="@dimen/time_prompt_size" />
     </LinearLayout>
     <TextView
             android:id="@+id/textView2"
@@ -93,7 +93,7 @@
             android:id="@+id/secs"
             android:layout_below="@id/textView2"
             android:text="0秒"
-            android:textSize="22dp"
+            android:textSize="@dimen/time_prompt_size"
             android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
