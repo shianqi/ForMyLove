@@ -1,5 +1,6 @@
 package com.shianqi.formylove;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
@@ -8,12 +9,9 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 
@@ -77,11 +75,6 @@ public class MainActivity extends AppCompatActivity
         timeSecond = (TextView)findViewById(R.id.sec);
         timeAll = (TextView)findViewById(R.id.secs);
 
-
-        //timeAll.setText(System.currentTimeMillis()+"");
-
-
-        //Log.i("时间",calendar.getTimeInMillis()+"");
         setTime();
         handler.sendEmptyMessage(1);
     }
@@ -151,9 +144,10 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
 
+        } else if (id == R.id.nav_gallery) {
+            Intent intent = new Intent(this,FaceActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
